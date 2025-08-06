@@ -1,0 +1,146 @@
+/* --- Police et fond général --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c1f2b;
+  margin: 0;
+  padding: 0;
+  color: #f8f9fa;
+}
+
+/* --- Effet d'apparition --- */
+.fade-in {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Carte de visite --- */
+.carte {
+  background: linear-gradient(to bottom right, #2c3e50, #1c1f2b);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  max-width: 420px;
+  width: 100%;
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+/* --- Photo de profil --- */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+/* --- Titres --- */
+h2 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* --- Description courte --- */
+.lead {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+/* --- Icônes réseaux sociaux --- */
+.social-icons .btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.social-icons .btn:hover {
+  transform: scale(1.1);
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* --- Boutons principaux --- */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  color: #ffffff;
+}
+
+.btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #0d6efd;
+}
+
+/* --- Section Compétences --- */
+.competences {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.competences h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.competences li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* --- Responsive Mobile --- */
+@media screen and (max-width: 480px) {
+  .carte {
+    padding: 25px 15px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .social-icons .btn {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .btn-primary,
+  .btn-outline-light {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
